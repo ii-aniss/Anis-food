@@ -41,10 +41,7 @@ document.getElementById('tabs').addEventListener('click',e=>{
  document.querySelectorAll('#tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));
  show(b.dataset.c);
 });
-// scrolling strip
-const words=['Burgers','Pizza','Chiwaa','Desserts','Cold drinks'];
-const one=words.map(w=>`<span>${w} ✱</span>`).join('');
-document.getElementById('strip').innerHTML=one.repeat(4);
+
 // opening hours: every day 11:00 to 23:00
 const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 const today=new Date().getDay();
